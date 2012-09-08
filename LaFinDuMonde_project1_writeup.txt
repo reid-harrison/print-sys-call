@@ -1,0 +1,19 @@
+Print Reverse System Call
+Phil Oliver
+Reid Harrison
+
+	On this project, we faced many issues dealing primarily with establishing a connection with the work and hack VM's.
+	Initially we were unable to successfully log into either VM. Another problem we encountered was the fact that one
+	of the config files for the VM's contained typos that prevented us from authenticating with the work VM.
+	However, this was a minor setback that was quickly resolved once we notified the TA's. The documentation provided
+	in the Resources folder on T-Square proved to be very helpful. Everything regarding the altering of the system call
+	table and Makefile seemed relatively straightforward, considering we possess no prior exposure to kernel
+	modification. To start out and figure out what exactly we needed to do, we followed the sample "Hello World"
+	application found in the lecture slides. After reinstalling the kernel once, working out other minor bugs,
+	and waiting on the kernel to compile we had a working example and understood exactly how to modify a kernel to add
+	our own system calls. For our project, we implemented a basic call that takes a string input from the user as an
+	argument and prints it to the screen in its original form and also in reverse. Problems arose when we realized that
+	some of the libraries we were using couldn't operate in kernel space so we had to research the correct libraries to
+	include for the system call. In the future, we plan to install the kernel on a local machine in hopes to reduce the
+	time taken to compile and not have to share resources with the rest of the class. This would further enable us to
+	experiment with different types of system calls.
