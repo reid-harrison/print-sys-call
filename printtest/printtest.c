@@ -18,9 +18,9 @@ int main(int argc, char *argv[])
         printf("Incorrect input format");
         exit(1);
     }
-    
+
     if(reverseString(argv[1]) >= 0) {
-	    return 1;
+        return 1;
     }
 
     printf("System call was unsuccessful");
